@@ -1,0 +1,239 @@
+.container-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* left sidebar starts from here */
+.left-sidebar {
+  height: 100vh;
+  background-color: aliceblue;
+  width: 20vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.left-sidebar .logo {
+  background-image: url(./assets/Img/logo.png);
+  width: 40%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 10%;
+}
+
+.left-sidebar .nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+
+.left-sidebar .nav-links a {
+  font-size: 22px;
+  text-decoration: none;
+  padding: 12px 42px;
+  border-radius: 12px;
+  color: #010203;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.nav-links a:hover {
+  background-color: #000000;
+  color: aliceblue;
+}
+
+.left-sidebar .more {
+  position: absolute;
+  bottom: 20px;
+}
+
+.left-sidebar .more button {
+  background-color: #000000;
+  padding: 12px 40px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 22px;
+}
+
+.left-sidebar .more a {
+  font-size: 22px;
+  text-decoration: none;
+  padding: 12px 42px;
+  border-radius: 12px;
+  color: #010203;
+}
+
+.left-sidebar .more a:hover {
+  background-color: #000000;
+  color: aliceblue;
+}
+
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 60px;
+  left: -60px;
+  background: #cabebe;
+  width: 22vw;
+  gap: 12px;
+  border-radius: 12px;
+
+}
+
+.dropdown-content::before {
+  content: "";
+  background-color: #cabebe;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 40%;
+  bottom: -10px;
+  rotate: 45deg;
+  z-index: -1;
+}
+
+.dropdown-content a {
+  margin: 12px;
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown-content hr {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border: black;
+}
+
+/* main content starts from here */
+.main-home-container {
+  position: absolute;
+  left: 20vw;
+  width: 50vw;
+  top: 0px;
+  background-color: rgb(189, 171, 171);
+  height: 100vh;
+}
+
+.rotate90 {
+  rotate: 90deg;
+  font-size: 42px;
+  color: white;
+}
+
+.stories {
+  background-color: #000000;
+  height: 10vh;
+  color: #cabebe;
+}
+
+
+.posts {
+  width: 80%;
+  margin: 0px auto;
+}
+
+
+/* user logo img size */
+.header-posts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: aliceblue;
+  background-color: #2b87e2;
+
+}
+
+.left-header-post {
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.username-header {
+  font-size: 22px;
+  font-weight: bold;
+  font-size: large;
+}
+
+.header-posts img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 12px;
+}
+
+.right-header-post button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+/* user posts home page */
+.image-post img {
+  width: 100%;
+  height: auto;
+}
+
+.likes-post {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 22px;
+  padding: 12px;
+  color: wheat;
+  background-color: #000000;
+
+}
+.text-post{
+  background-color: #000000;
+  border-top: 2px solid wheat;
+}
+.text-post span {
+  color: #cabebe;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 18px;
+  /* background-color: #2b87e2; */
+  width: 100%;
+}
+
+.comments-result {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+}
+
+.comments-result span {
+  font-size: 16px;
+  color: red;
+}
+
+.username-header-color {
+  font-size: 20px;
+  margin: 12px;
+}
+
+
+
+
+/* right sidebar starts from here */
+.right-sidebar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: aqua;
+  width: 20vw;
+}
+
+.username {
+  color: #000000;
+}
