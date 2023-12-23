@@ -88,6 +88,7 @@
   border-radius: 12px;
   z-index: 100;
 
+
 }
 
 .dropdown-content::before {
@@ -122,7 +123,165 @@
   top: 0px;
   background-color: #ffffff;
   height: 100vh;
+  overflow: hidden;
 }
+
+.suggestions-profile-user {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-stories-data {
+  scroll-behavior: smooth;
+}
+
+.button-arrow {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  background-color: #dbd9d98b;
+
+}
+
+.button-arrow-left {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+
+  background-color: #dbd9d98b;
+
+
+}
+
+.button-arrow button,
+.button-arrow-left button {
+  background-color: #dbd6d61e;
+  padding: 12px;
+  color: #f70606;
+  border: 2px transparent;
+  z-index: 1000;
+  font-size: 32px;
+  /* height: 100%; */
+  /* border-radius: 50%; */
+}
+
+.user-stories-data {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin: 22px;
+  overflow-x: auto;
+
+  white-space: nowrap;
+}
+
+.user-stories-data::-webkit-scrollbar {
+  display: none;
+}
+
+.user-stories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user-stories img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #F56040;
+  padding: 4px;
+
+}
+
+.stories-select {
+  width: 100%;
+}
+
+
+
+.stories-null {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  /* background-color: #000000; */
+  /* z-index: 1000; */
+
+}
+
+
+.modal-overlay {
+  position: absolute;
+
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* height: 10px; */
+  top: 0;
+  left: 0;
+  background-color: #090909;
+}
+
+.modal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: rgb(208, 18, 76);
+  background: linear-gradient(30deg, rgb(66, 54, 58) 10%, rgba(9, 39, 121, 1) 29%, rgba(231, 0, 255, 1) 100%);
+  width: 30vw;
+}
+
+.modal-content button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 42px;
+  margin: 0px auto;
+  background-color: transparent;
+  color: #cabebe;
+  border: transparent;
+
+}
+
+.modal-content img {
+  width: 100%;
+  margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.user-posts-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+.posts {
+  position: absolute;
+  top: 15vh;
+}
+
+
+
+
+
 
 
 
@@ -136,9 +295,10 @@
 }
 
 @media (max-width: 1000px) {
-  .main-home-container{
+  .main-home-container {
     width: 80vw;
   }
+
   .right-sidebar {
     display: none;
   }

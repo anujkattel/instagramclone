@@ -4,6 +4,7 @@ import Home from '../../pages/Home/Home'
 import Leftsidebar from '../leftsidebar/Leftsidebar'
 import Rightsidebar from '../rightsidebar/Rightsidebar'
 import '../../App.css'
+import Stories from '../stories/Stories'
 
 function MainConatiner() {
   return (
@@ -13,6 +14,7 @@ function MainConatiner() {
           <Leftsidebar />
           <Routes>
             <Route path='/' Component={Home} />
+            <Route path='/story' Component={Stories} />
           </Routes>
           <Rightsidebar />
         </div>
